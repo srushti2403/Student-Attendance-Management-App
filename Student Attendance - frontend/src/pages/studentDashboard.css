@@ -1,0 +1,22 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;1,100&display=swap');
+
+/* Apply font family to h1 element */
+* {
+    font-family: 'Public Sans', sans-serif;
+}
+
+h2{
+}
+
+.handWaveIcon{
+    position: relative;
+    top: 2px;
+    left: 6px;
+    color: rgb(255, 191, 0);
+}
+
+h4{
+    color: rgb(67, 66, 66);
+    font-weight: 900;
+}
