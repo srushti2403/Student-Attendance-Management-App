@@ -26,7 +26,7 @@ const StudentTable = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await fetch("http://192.168.1.13:5082/api/Student"); // Replace 'http://your-api-url/api/student' with your actual API endpoint
+      const response = await fetch("http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Student"); // Replace 'http://your-api-url/api/student' with your actual API endpoint
       if (response.ok) {
         const data = await response.json();
         console.log(data, "Data");
@@ -76,7 +76,7 @@ const StudentTable = () => {
 
       // Make the API call to update the student
       const response = await fetch(
-        `http://192.168.1.13:5082/api/Student/${student.id}`,
+        `http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Student/${student.id}`,
         {
           method: "PUT", // Use the appropriate HTTP method for updating (PUT, PATCH, POST, etc.)
           headers: {
@@ -222,9 +222,9 @@ const StudentTable = () => {
                   <TableCell>Roll Number</TableCell>
                   <TableCell>English Marks</TableCell>
                   <TableCell>Hindi Marks</TableCell>
-                  <TableCell>SST Marks</TableCell>
-                  <TableCell>Maths Marks</TableCell>
-                  <TableCell>Sceince Marks</TableCell>
+                  <TableCell>Social Science Marks</TableCell>
+                  <TableCell>Mathematics Marks</TableCell>
+                  <TableCell>Science Marks</TableCell>
                   <TableCell>Attendance</TableCell>
                   <TableCell>Action</TableCell>
                 </TableRow>

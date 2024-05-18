@@ -15,7 +15,7 @@ const StudentDashboard = ({ stud }: { stud: any }) => {
         style={{ marginTop: "80px", marginBottom: "20px" }}
       >
         <h2>
-          Hi Rohan, Welcome back
+          Hi Srushti, Welcome back
           <span className="handWaveIcon">
             <WavingHandIcon />
           </span>

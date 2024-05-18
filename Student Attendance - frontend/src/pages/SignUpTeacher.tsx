@@ -60,7 +60,7 @@ function SignUpTeacher() {
     try {
       // Make a POST request to your backend API endpoint
       const response = await axios.post(
-        "http://192.168.1.13:5082/api/Teacher/register",
+        "http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Teacher/register",
         teacher
       );
 

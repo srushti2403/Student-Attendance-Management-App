@@ -48,7 +48,7 @@ function SignUpStudent() {
     // Add logic to handle form submission (e.g., API call)
     try {
       const response = await fetch(
-        "http://192.168.1.13:5082/api/Student/register",
+        "http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Student/register",
         {
           method: "POST",
           headers: {

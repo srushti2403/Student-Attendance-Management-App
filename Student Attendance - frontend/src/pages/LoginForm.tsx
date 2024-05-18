@@ -70,7 +70,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ setStud }) => {
 
       try {
         const response = await fetch(
-          "http://192.168.1.13:5082/api/Student/login",
+          "http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Student/login",
           {
             method: "POST",
             headers: {
@@ -95,7 +95,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ setStud }) => {
     } else {
       try {
         const response = await fetch(
-          "http://192.168.1.13:5082/api/Teacher/login",
+          "http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Teacher/login",
           {
             method: "POST",
             headers: {
